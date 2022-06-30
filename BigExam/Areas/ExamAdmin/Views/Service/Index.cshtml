@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<Service>
+
+<div>
+    <div class="table-responsive">
+        <a  asp-controller="service" asp-action="create" class="btn btn-success"></a>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+
+                    <th scope="col">Icon</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Subtitle</th>
+                    <th scope="col">Sentence</th>
+                    <th scope="col">Delete</th>
+                    <th scope="col">Detail</th>
+                    <th scope="col">Edit</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Service service in Model)
+                {
+                <tr>
+                    <td scope="row">@service.Id</td>
+
+                    <td scope="row">@service.Icon</td>
+                    <td scope="row">@service.Title</td>
+                    <td scope="row">@service.Subtitle</td>
+                    <td scope="row">@service.Sentence</td>
+                    <td scope="row"><a asp-route-id="@service.Id" asp-controller="service" asp-action="delete"><i class="mdi mdi-delete-variant"></i></a></td>
+                    <td scope="row"><a asp-controller="service" asp-action="detail"><i class="mdi mdi-information-outline"></i></a></td>
+                    <td scope="row"><i class="mdi mdi-border-color"></i></td>
+
+
+                </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

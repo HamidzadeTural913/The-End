@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    .container{
+        .row{
+            line-height: 45px;
+            align-items: center;
+            .logo{
+               color: white;
+               
+            }
+            .list-styles{
+                display: flex;
+                justify-content: end;
+             ul{
+                 display: flex;
+                 gap: 15px;
+                 
+                 li{
+                     list-style: none;
+                   a{
+                       text-decoration: none;
+                       color: #fff;
+                   }
+                    
+                 }
+             }
+            }
+            .icon{
+                color: #fff;
+                font-size: 25px;
+                display: none;
+                
+            }
+        }
+    }
+
+}
+
+main{
+  #similar-slider{
+      width: 100%;
+      height: 50vh;
+      background-color: #005F50;
+      
+        .write-slider{
+         
+            text-align: center;
+            color: #fff;
+            h1{
+                font-size: 60px;
+            }
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 23px
+            }
+          
+        }
+        .button-slider{
+            text-align: center;
+            button{
+                width: 250px;
+                height: 40px;
+                background-color:#F70048;
+                border: none;
+                &:hover{
+                    background-color: rgb(243, 159, 173);
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff
+                }
+            }
+        }
+      
+  }   
+
+  #services{
+    .container{
+        .row{
+           .our-services{
+              h1{
+                  font-size: 40px;
+                  color: #005F50;
+              }
+           } 
+           .services-write{
+               h3{
+                font-weight: 400;
+                &:hover{
+                    color: #005F50
+                }
+               }
+               p{
+                   font-weight: 200;
+                   &:hover{
+                    color: #005F50
+                }
+               }
+           }
+        }
+    }
+  }
+
+  #cards{
+      .all-card{
+          .card-one{
+              width: 100%;
+              height: auto;
+              background-color: #005F50;
+              .icon{
+                  text-align: center;
+                  font-size: 55px;
+                  color: #fff;
+                  &:hover{
+                   i{
+                    font-size: 35px;
+                   }
+                  }
+              }
+              .card-title{
+                  color: #fff;
+                  text-align: center;
+                  h3{
+                    font-weight: 400;
+                  }
+                  p{
+                      font-size: 16px;
+                      padding: 6px;
+                  }
+              }
+              .card-subtitle{
+                color: #fff;
+                text-align: center;
+                padding: 6px;
+              }
+          }
+      }
+  }
+
+  #statistic{
+      width: 100%;
+      height: 200px;
+      background-color: #005F50;
+      .row{
+         .stat-title{
+             display: flex;
+             justify-content: space-between;
+             color: #fff
+         }
+         .stat-info{
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+         
+           
+         }
+      }
+  }
+
+  #count-main{
+    width: 100%;
+    height: 150px;
+    background-color: #005F50;
+      .container{
+          .row{
+              .modes{
+                ul{
+                   
+                    display: flex;
+                    justify-content: space-between;
+                    color: #fff;
+                       li{
+                         font-weight: 600;
+                         font-size: 40px;
+                         list-style: none  
+                       }
+                   }
+              }
+
+              .categories{
+               ul{
+                
+                display: flex;
+                justify-content: space-between;
+                color: #fff;
+                   li{
+                     font-weight: 300;
+                     font-size: 26px;
+                     list-style: none  
+                   }
+               }
+              }
+          }
+      }
+  }
+
+  #contact{
+      .my-forms{
+          .inputs{
+              display: flex;
+              justify-content: space-between;
+          }
+      }
+      .contant-about{
+          .adress{
+              h4{
+                  font-size: 18px;
+              }
+              display: flex;
+          }
+          .email{
+            h4{
+                font-size: 18px;
+            }
+            display: flex;
+        }
+        .web{
+            h4{
+                font-size: 18px;
+            }
+            display: flex;
+        }
+        .mobile{
+            h4{
+                font-size: 18px;
+            }
+            display: flex;
+        }
+      }
+  }
+  
+}
+footer{
+    width: 100%;
+    height: 50px;
+    color: #fff;  
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    justify-content:end; 
+  }
+
+  @media only screen and (max-width: 996px) {
+    .list-styles {
+        display: none;
+    }
+}
+
+
